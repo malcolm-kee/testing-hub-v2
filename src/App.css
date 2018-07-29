@@ -7,15 +7,33 @@
   height: 80px;
 }
 
-.App-header {
+.app-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
   color: white;
 }
 
-.App-title {
+.app-title {
   font-size: 1.5em;
+}
+
+.main-nav > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-item {
+  min-width: 50px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
 }
 
 .App-intro {
@@ -23,6 +41,10 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
